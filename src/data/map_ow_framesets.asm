@@ -242,3 +242,22 @@ HallOfHonorOWFrameset:
 	ow_frame  0, $a6, 0, HallOfHonorTilesetGfx, $2e
 	ow_frame  0, $a7, 0, HallOfHonorTilesetGfx, $2f
 	db -1 ; end
+
+PalletTownOWFrameset:
+	db $3, $73, $73
+
+	ow_frame 20, $94, 0, KantoTilesetGfx, $63
+	ow_frame  0, $83, 0, KantoTilesetGfx, $61
+	ow_frame 20, $94, 0, KantoTilesetGfx, $64
+	ow_frame  0, $83, 0, KantoTilesetGfx, $62
+	ow_frame 20, $94, 0, KantoTilesetGfx, $63
+	ow_frame  0, $83, 0, KantoTilesetGfx, $60
+	ow_frame 20, $94, 0, KantoTilesetGfx, $14
+	ow_frame 20, $94, 0, KantoTilesetGfx, $65
+	ow_frame  0, $83, 0, KantoTilesetGfx, $61
+	ow_frame 20, $94, 0, KantoTilesetGfx, $66
+	ow_frame  0, $83, 0, KantoTilesetGfx, $62
+	ow_frame 20, $94, 0, KantoTilesetGfx, $65
+	ow_frame  0, $83, 0, KantoTilesetGfx, $60
+	ow_frame 20, $94, 0, KantoTilesetGfx, $14
+	db -1 ; end

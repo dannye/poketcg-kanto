@@ -33,7 +33,7 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDARY:
 .PHONY: all tcg clean tidy compare tools
 
-all: $(rom) compare
+all: $(rom)
 tcg: $(rom) compare
 
 clean: tidy

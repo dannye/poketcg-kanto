@@ -35,4 +35,5 @@ MapOWFramesetPointers:
 	dw DefaultOWFrameset,         DefaultOWFrameset            ; POKEMON_DOME_ENTRANCE
 	dw DefaultOWFrameset,         DefaultOWFrameset            ; POKEMON_DOME
 	dw HallOfHonorOWFrameset,     HallOfHonorOWFrameset        ; HALL_OF_HONOR
+	dw PalletTownOWFrameset,      PalletTownOWFrameset         ; PALLET_TOWN
 	assert_table_length NUM_MAPS

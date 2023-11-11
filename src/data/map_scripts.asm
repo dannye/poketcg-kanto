@@ -354,4 +354,14 @@ MapScripts::
 	dw NULL
 	dw NULL
 
+; PALLET_TOWN
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+
 	assert_table_length NUM_MAPS

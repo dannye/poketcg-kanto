@@ -59,6 +59,8 @@
 	const TILEMAP_HALL_OF_HONOR_DOOR_MAP_EVENT_CGB ; $39
 	const TILEMAP_HALL_OF_HONOR                    ; $3a
 	const TILEMAP_HALL_OF_HONOR_CGB                ; $3b
+	const TILEMAP_PALLET_TOWN
+	const TILEMAP_PALLET_TOWN_CGB
 	const TILEMAP_CARD_POP_CGB                     ; $3c
 	const TILEMAP_CARD_POP                         ; $3d
 	const TILEMAP_GRASS_MEDAL                      ; $3e

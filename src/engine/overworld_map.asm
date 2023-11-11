@@ -194,7 +194,7 @@ OverworldMap_LoadSelectedMap:
 	ld [wTempPlayerXCoord], a
 	ld a, [hli]
 	ld [wTempPlayerYCoord], a
-	ld a, NORTH
+	ld a, [hl]
 	ld [wTempPlayerDirection], a
 	ld hl, wOverworldTransition
 	set 4, [hl]

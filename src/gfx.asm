@@ -2354,3 +2354,25 @@ GamblerCardGfx::
 RecycleCardGfx::
 	INCBIN "gfx/cards/recycle.2bpp"
 	INCBIN "gfx/cards/recycle.pal"
+
+SECTION "Gfx 13", ROMX
+
+KantoTilesetGfx::
+	dw 112
+	INCBIN "gfx/tilesets/kanto.2bpp"
+
+PalletTownTilemap::
+	INCBIN "data/maps/tiles/dimensions/pallet_town.dimensions"
+	dw PalletTownPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/pallet_town.bin.lz"
+PalletTownPermissions:
+	INCBIN "data/maps/permissions/pallet_town.bin.lz"
+
+PalletTownCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/pallet_town.dimensions"
+	dw PalletTownCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/pallet_town.bgmap.lz"
+PalletTownCGBPermissions:
+	INCBIN "data/maps/permissions/pallet_town.bin.lz"

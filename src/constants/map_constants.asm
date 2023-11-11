@@ -33,6 +33,7 @@
 	const POKEMON_DOME_ENTRANCE   ; $1F
 	const POKEMON_DOME            ; $20
 	const HALL_OF_HONOR           ; $21
+	const PALLET_TOWN
 
 DEF NUM_MAPS EQU const_value
 

@@ -16,6 +16,7 @@
 	const TILESET_POKEMON_DOME_ENTRANCE       ; $0e
 	const TILESET_POKEMON_DOME                ; $0f
 	const TILESET_HALL_OF_HONOR               ; $10
+	const TILESET_KANTO
 	const TILESET_CARD_POP                    ; $11
 	const TILESET_MEDAL                       ; $12
 	const TILESET_GAMEBOY_LINK                ; $13

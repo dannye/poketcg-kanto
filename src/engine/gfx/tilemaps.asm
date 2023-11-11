@@ -67,6 +67,8 @@ Tilemaps:
 	tilemap HallOfHonorDoorMapEventCGBTilemap, TILESET_POKEMON_DOME                ; TILEMAP_HALL_OF_HONOR_DOOR_MAP_EVENT_CGB
 	tilemap HallOfHonorTilemap,                TILESET_HALL_OF_HONOR               ; TILEMAP_HALL_OF_HONOR
 	tilemap HallOfHonorCGBTilemap,             TILESET_HALL_OF_HONOR               ; TILEMAP_HALL_OF_HONOR_CGB
+	tilemap PalletTownTilemap,                 TILESET_KANTO                       ; TILEMAP_PALLET_TOWN
+	tilemap PalletTownCGBTilemap,              TILESET_KANTO                       ; TILEMAP_PALLET_TOWN_CGB
 	tilemap CardPopCGBTilemap,                 TILESET_CARD_POP                    ; TILEMAP_CARD_POP_CGB
 	tilemap CardPopTilemap,                    TILESET_CARD_POP                    ; TILEMAP_CARD_POP
 	tilemap GrassMedalTilemap,                 TILESET_MEDAL                       ; TILEMAP_GRASS_MEDAL

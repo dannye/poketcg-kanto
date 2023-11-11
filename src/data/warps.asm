@@ -34,6 +34,7 @@ WarpDataPointers:
 	dw PokemonDomeEntranceWarpData
 	dw PokemonDomeWarpData
 	dw HallOfHonorWarpData
+	dw PalletTownWarpData
 	assert_table_length NUM_MAPS
 
 ; each warp is five bytes long
@@ -249,4 +250,9 @@ PokemonDomeWarpData:
 HallOfHonorWarpData:
 	db $0a, $18, POKEMON_DOME, $0e, $02
 	db $0c, $18, POKEMON_DOME, $10, $02
+	db $00, $00
+
+PalletTownWarpData:
+	db $10, $00, OVERWORLD_MAP, $00, $00
+	db $12, $00, OVERWORLD_MAP, $00, $00
 	db $00, $00
