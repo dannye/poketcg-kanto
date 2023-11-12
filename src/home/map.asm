@@ -232,20 +232,18 @@ PlayerMovementOffsetTable_Tiles::
 
 OverworldMapNames::
 	table_width 2, OverworldMapNames
-	tx OverworldMapMasonLaboratoryText
-	tx OverworldMapMasonLaboratoryText
-	tx OverworldMapIshiharasHouseText
-	tx OverworldMapFightingClubText
-	tx OverworldMapRockClubText
-	tx OverworldMapWaterClubText
-	tx OverworldMapLightningClubText
-	tx OverworldMapGrassClubText
-	tx OverworldMapPsychicClubText
-	tx OverworldMapScienceClubText
-	tx OverworldMapFireClubText
-	tx OverworldMapChallengeHallText
-	tx OverworldMapPokemonDomeText
-	tx OverworldMapMysteryHouseText
+	tx OverworldMapPalletTownText
+	tx OverworldMapPalletTownText
+	tx OverworldMapViridianCityText
+	tx OverworldMapPewterCityText
+	tx OverworldMapCeruleanCityText
+	tx OverworldMapLavenderTownText
+	tx OverworldMapVermilionCityText
+	tx OverworldMapCeladonCityText
+	tx OverworldMapFuchsiaCityText
+	tx OverworldMapCinnabarIslandText
+	tx OverworldMapIndigoPlateauText
+	tx OverworldMapSaffronCityText
 	assert_table_length NUM_OWMAP_NAMES
 
 HandleMapWarp::
@@ -364,13 +362,13 @@ GetDefaultSong::
 	jr z, .default_song
 	; only return Ronald's theme if it's
 	; not in one of the following maps
-	ld a, [wOverworldMapSelection]
-	cp OWMAP_ISHIHARAS_HOUSE
-	jr z, .default_song
-	cp OWMAP_CHALLENGE_HALL
-	jr z, .default_song
-	cp OWMAP_POKEMON_DOME
-	jr z, .default_song
+;	ld a, [wOverworldMapSelection]
+;	cp OWMAP_ISHIHARAS_HOUSE
+;	jr z, .default_song
+;	cp OWMAP_CHALLENGE_HALL
+;	jr z, .default_song
+;	cp OWMAP_POKEMON_DOME
+;	jr z, .default_song
 	ld a, MUSIC_RONALD
 	ret
 .default_song

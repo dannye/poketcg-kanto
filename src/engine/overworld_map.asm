@@ -165,16 +165,16 @@ OverworldMap_PrintMapName:
 OverworldMap_GetOWMapID:
 	push bc
 	ld a, [wOverworldMapSelection]
-	cp OWMAP_ISHIHARAS_HOUSE
-	jr nz, .got_map
-	ld c, a
-	ld a, EVENT_ISHIHARAS_HOUSE_MENTIONED
-	farcall GetEventValue
-	or a
-	ld a, c
-	jr nz, .got_map
-	ld a, OWMAP_MYSTERY_HOUSE
-.got_map
+;	cp OWMAP_ISHIHARAS_HOUSE
+;	jr nz, .got_map
+;	ld c, a
+;	ld a, EVENT_ISHIHARAS_HOUSE_MENTIONED
+;	farcall GetEventValue
+;	or a
+;	ld a, c
+;	jr nz, .got_map
+;	ld a, OWMAP_MYSTERY_HOUSE
+;.got_map
 	pop bc
 	ret
 

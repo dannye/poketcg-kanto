@@ -2991,3 +2991,14 @@ TextOffsets::
 	textpointer GamblerDescription                                 ; 0x0bab
 	textpointer RecycleName                                        ; 0x0bac
 	textpointer RecycleDescription                                 ; 0x0bad
+	textpointer OverworldMapPalletTownText
+	textpointer OverworldMapViridianCityText
+	textpointer OverworldMapPewterCityText
+	textpointer OverworldMapCeruleanCityText
+	textpointer OverworldMapLavenderTownText
+	textpointer OverworldMapVermilionCityText
+	textpointer OverworldMapCeladonCityText
+	textpointer OverworldMapFuchsiaCityText
+	textpointer OverworldMapCinnabarIslandText
+	textpointer OverworldMapIndigoPlateauText
+	textpointer OverworldMapSaffronCityText

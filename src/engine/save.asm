@@ -502,24 +502,24 @@ WRAMToSRAMMapper:
 
 ; save the game
 ; if c is 0, save the player at their current position
-; otherwise, save the player in Mason's lab
+; otherwise, save the player in Pallet Town
 _SaveGame::
 	ld a, c
 	or a
-	jr nz, .force_mason_lab
+	jr nz, .force_pallet_town
 	farcall BackupPlayerPosition
 	jr .save
 
-.force_mason_lab
-	ld a, $2
+.force_pallet_town
+	ld a, 8
 	ld [wTempPlayerXCoord], a
-	ld a, $4
+	ld a, 10
 	ld [wTempPlayerYCoord], a
 	ld a, SOUTH
 	ld [wTempPlayerDirection], a
-	ld a, MASON_LABORATORY
+	ld a, PALLET_TOWN
 	ld [wTempMap], a
-	ld a, OWMAP_MASON_LABORATORY
+	ld a, OWMAP_PALLET_TOWN
 	ld [wOverworldMapSelection], a
 
 .save

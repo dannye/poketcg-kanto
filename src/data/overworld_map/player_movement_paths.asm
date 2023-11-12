@@ -1,684 +1,436 @@
+MACRO path_pos
+	db \1 * 8 + 4, \2 * 8 + 8
+ENDM
+
 OverworldMap_PlayerMovementPaths:
 	table_width 2, OverworldMap_PlayerMovementPaths
-	dw OverworldMap_MasonLaboratoryPaths
-	dw OverworldMap_IshiharasHousePaths
-	dw OverworldMap_FightingClubPaths
-	dw OverworldMap_RockClubPaths
-	dw OverworldMap_WaterClubPaths
-	dw OverworldMap_LightningClubPaths
-	dw OverworldMap_GrassClubPaths
-	dw OverworldMap_PsychicClubPaths
-	dw OverworldMap_ScienceClubPaths
-	dw OverworldMap_FireClubPaths
-	dw OverworldMap_ChallengeHallPaths
-	dw OverworldMap_PokemonDomePaths
+	dw OverworldMap_PalletTownPaths
+	dw OverworldMap_ViridianCityPaths
+	dw OverworldMap_PewterCityPaths
+	dw OverworldMap_CeruleanCityPaths
+	dw OverworldMap_LavenderTownPaths
+	dw OverworldMap_VermilionCityPaths
+	dw OverworldMap_CeladonCityPaths
+	dw OverworldMap_FuchsiaCityPaths
+	dw OverworldMap_CinnabarIslandPaths
+	dw OverworldMap_IndigoPlateauPaths
+	dw OverworldMap_SaffronCityPaths
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_MasonLaboratoryPaths:
-	table_width 2, OverworldMap_MasonLaboratoryPaths
-	dw OverworldMap_NoMovement
-	dw OverworldMap_MasonLaboratoryPathToIshiharasHouse
-	dw OverworldMap_StraightPath
-	dw OverworldMap_MasonLaboratoryPathToRockClub
-	dw OverworldMap_MasonLaboratoryPathToWaterClub
-	dw OverworldMap_MasonLaboratoryPathToLightningClub
-	dw OverworldMap_MasonLaboratoryPathToGrassClub
-	dw OverworldMap_MasonLaboratoryPathToPsychicClub
-	dw OverworldMap_MasonLaboratoryPathToScienceClub
-	dw OverworldMap_MasonLaboratoryPathToFireClub
-	dw OverworldMap_MasonLaboratoryPathToChallengeHall
-	dw OverworldMap_MasonLaboratoryPathToPokemonDome
+OverworldMap_PalletTownPaths:
+	table_width 2, OverworldMap_PalletTownPaths
+	dw OverworldMap_NoMovement                        ; OWMAP_PALLET_TOWN
+	dw OverworldMap_StraightPath                      ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_PEWTER_CITY
+	dw OverworldMap_PalletTownPathToCeruleanCity      ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_PalletTownPathToLavenderTown      ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_PalletTownPathToVermilionCity     ; OWMAP_VERMILION_CITY
+	dw OverworldMap_PalletTownPathToCeladonCity       ; OWMAP_CELADON_CITY
+	dw OverworldMap_PalletTownPathToFuchsiaCity       ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_PalletTownPathToIndigoPlateau     ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_PalletTownPathToSaffronCity       ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_IshiharasHousePaths:
-	table_width 2, OverworldMap_IshiharasHousePaths
-	dw OverworldMap_IshiharasHousePathToMasonLaboratory
-	dw OverworldMap_NoMovement
-	dw OverworldMap_IshiharasHousePathToFightingClub
-	dw OverworldMap_IshiharasHousePathToRockClub
-	dw OverworldMap_IshiharasHousePathToWaterClub
-	dw OverworldMap_IshiharasHousePathToLightningClub
-	dw OverworldMap_IshiharasHousePathToGrassClub
-	dw OverworldMap_IshiharasHousePathToPsychicClub
-	dw OverworldMap_IshiharasHousePathToScienceClub
-	dw OverworldMap_IshiharasHousePathToFireClub
-	dw OverworldMap_IshiharasHousePathToChallengeHall
-	dw OverworldMap_IshiharasHousePathToPokemonDome
+OverworldMap_ViridianCityPaths:
+	table_width 2, OverworldMap_ViridianCityPaths
+	dw OverworldMap_StraightPath                      ; OWMAP_PALLET_TOWN
+	dw OverworldMap_NoMovement                        ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_PEWTER_CITY
+	dw OverworldMap_ViridianCityPathToCeruleanCity    ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_ViridianCityPathToLavenderTown    ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_ViridianCityPathToVermilionCity   ; OWMAP_VERMILION_CITY
+	dw OverworldMap_ViridianCityPathToCeladonCity     ; OWMAP_CELADON_CITY
+	dw OverworldMap_ViridianCityPathToFuchsiaCity     ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_ViridianCityPathToIndigoPlateau   ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_ViridianCityPathToSaffronCity     ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_FightingClubPaths:
-	table_width 2, OverworldMap_FightingClubPaths
-	dw OverworldMap_StraightPath
-	dw OverworldMap_FightingClubPathToIshiharasHouse
-	dw OverworldMap_NoMovement
-	dw OverworldMap_FightingClubPathToRockClub
-	dw OverworldMap_FightingClubPathToWaterClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_FightingClubPathToPsychicClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_FightingClubPathToFireClub
-	dw OverworldMap_FightingClubPathToChallengeHall
-	dw OverworldMap_StraightPath
+OverworldMap_PewterCityPaths:
+	table_width 2, OverworldMap_PewterCityPaths
+	dw OverworldMap_StraightPath                      ; OWMAP_PALLET_TOWN
+	dw OverworldMap_StraightPath                      ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_NoMovement                        ; OWMAP_PEWTER_CITY
+	dw OverworldMap_PewterCityPathToCeruleanCity      ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_PewterCityPathToLavenderTown      ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_PewterCityPathToVermilionCity     ; OWMAP_VERMILION_CITY
+	dw OverworldMap_PewterCityPathToCeladonCity       ; OWMAP_CELADON_CITY
+	dw OverworldMap_PewterCityPathToFuchsiaCity       ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_PewterCityPathToIndigoPlateau     ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_PewterCityPathToSaffronCity       ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_RockClubPaths:
-	table_width 2, OverworldMap_RockClubPaths
-	dw OverworldMap_RockClubPathToMasonLaboratory
-	dw OverworldMap_RockClubPathToIshiharasHouse
-	dw OverworldMap_RockClubPathToFightingClub
-	dw OverworldMap_NoMovement
-	dw OverworldMap_RockClubPathToWaterClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_RockClubPathToGrassClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_RockClubPathToScienceClub
-	dw OverworldMap_RockClubPathToFireClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
+OverworldMap_CeruleanCityPaths:
+	table_width 2, OverworldMap_CeruleanCityPaths
+	dw OverworldMap_CeruleanCityPathToPalletTown      ; OWMAP_PALLET_TOWN
+	dw OverworldMap_CeruleanCityPathToViridianCity    ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_CeruleanCityPathToPewterCity      ; OWMAP_PEWTER_CITY
+	dw OverworldMap_NoMovement                        ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_CeruleanCityPathToLavenderTown    ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_StraightPath                      ; OWMAP_VERMILION_CITY
+	dw OverworldMap_CeruleanCityPathToCeladonCity     ; OWMAP_CELADON_CITY
+	dw OverworldMap_CeruleanCityPathToFuchsiaCity     ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_CeruleanCityPathToCinnabarIsland  ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_CeruleanCityPathToIndigoPlateau   ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_StraightPath                      ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_WaterClubPaths:
-	table_width 2, OverworldMap_WaterClubPaths
-	dw OverworldMap_WaterClubPathToMasonLaboratory
-	dw OverworldMap_WaterClubPathToIshiharasHouse
-	dw OverworldMap_WaterClubPathToFightingClub
-	dw OverworldMap_WaterClubPathToRockClub
-	dw OverworldMap_NoMovement
-	dw OverworldMap_WaterClubPathToLightningClub
-	dw OverworldMap_WaterClubPathToGrassClub
-	dw OverworldMap_WaterClubPathToPsychicClub
-	dw OverworldMap_WaterClubPathToScienceClub
-	dw OverworldMap_WaterClubPathToFireClub
-	dw OverworldMap_WaterClubPathToChallengeHall
-	dw OverworldMap_WaterClubPathToPokemonDome
+OverworldMap_LavenderTownPaths:
+	table_width 2, OverworldMap_LavenderTownPaths
+	dw OverworldMap_LavenderTownPathToPalletTown      ; OWMAP_PALLET_TOWN
+	dw OverworldMap_LavenderTownPathToViridianCity    ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_LavenderTownPathToPewterCity      ; OWMAP_PEWTER_CITY
+	dw OverworldMap_LavenderTownPathToCeruleanCity    ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_NoMovement                        ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_LavenderTownPathToVermilionCity   ; OWMAP_VERMILION_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CELADON_CITY
+	dw OverworldMap_LavenderTownPathToFuchsiaCity     ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_LavenderTownPathToCinnabarIsland  ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_LavenderTownPathToIndigoPlateau   ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_StraightPath                      ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_LightningClubPaths:
-	table_width 2, OverworldMap_LightningClubPaths
-	dw OverworldMap_LightningClubPathToMasonLaboratory
-	dw OverworldMap_LightningClubPathToIshiharasHouse
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_LightningClubPathToWaterClub
-	dw OverworldMap_NoMovement
-	dw OverworldMap_StraightPath
-	dw OverworldMap_LightningClubPathToPsychicClub
-	dw OverworldMap_LightningClubPathToScienceClub
-	dw OverworldMap_LightningClubPathToFireClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
+OverworldMap_VermilionCityPaths:
+	table_width 2, OverworldMap_VermilionCityPaths
+	dw OverworldMap_VermilionCityPathToPalletTown     ; OWMAP_PALLET_TOWN
+	dw OverworldMap_VermilionCityPathToViridianCity   ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_VermilionCityPathToPewterCity     ; OWMAP_PEWTER_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_VermilionCityPathToLavenderTown   ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_NoMovement                        ; OWMAP_VERMILION_CITY
+	dw OverworldMap_VermilionCityPathToCeladonCity    ; OWMAP_CELADON_CITY
+	dw OverworldMap_VermilionCityPathToFuchsiaCity    ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_VermilionCityPathToCinnabarIsland ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_VermilionCityPathToIndigoPlateau  ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_StraightPath                      ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_GrassClubPaths:
-	table_width 2, OverworldMap_GrassClubPaths
-	dw OverworldMap_GrassClubPathToMasonLaboratory
-	dw OverworldMap_GrassClubPathToIshiharasHouse
-	dw OverworldMap_StraightPath
-	dw OverworldMap_GrassClubPathToRockClub
-	dw OverworldMap_GrassClubPathToWaterClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_NoMovement
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_GrassClubPathToChallengeHall
-	dw OverworldMap_StraightPath
+OverworldMap_CeladonCityPaths:
+	table_width 2, OverworldMap_CeladonCityPaths
+	dw OverworldMap_CeladonCityPathToPalletTown       ; OWMAP_PALLET_TOWN
+	dw OverworldMap_CeladonCityPathToViridianCity     ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_CeladonCityPathToPewterCity       ; OWMAP_PEWTER_CITY
+	dw OverworldMap_CeladonCityPathToCeruleanCity     ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_CeladonCityPathToVermilionCity    ; OWMAP_VERMILION_CITY
+	dw OverworldMap_NoMovement                        ; OWMAP_CELADON_CITY
+	dw OverworldMap_CeladonCityPathToFuchsiaCity      ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_CeladonCityPathToCinnabarIsland   ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_CeladonCityPathToIndigoPlateau    ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_StraightPath                      ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_PsychicClubPaths:
-	table_width 2, OverworldMap_PsychicClubPaths
-	dw OverworldMap_PsychicClubPathToMasonLaboratory
-	dw OverworldMap_PsychicClubPathToIshiharasHouse
-	dw OverworldMap_PsychicClubPathToFightingClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_PsychicClubPathToWaterClub
-	dw OverworldMap_PsychicClubPathToLightningClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_NoMovement
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
+OverworldMap_FuchsiaCityPaths:
+	table_width 2, OverworldMap_FuchsiaCityPaths
+	dw OverworldMap_FuchsiaCityPathToPalletTown       ; OWMAP_PALLET_TOWN
+	dw OverworldMap_FuchsiaCityPathToViridianCity     ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_FuchsiaCityPathToPewterCity       ; OWMAP_PEWTER_CITY
+	dw OverworldMap_FuchsiaCityPathToCeruleanCity     ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_FuchsiaCityPathToLavenderTown     ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_FuchsiaCityPathToVermilionCity    ; OWMAP_VERMILION_CITY
+	dw OverworldMap_FuchsiaCityPathToCeladonCity      ; OWMAP_CELADON_CITY
+	dw OverworldMap_NoMovement                        ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_FuchsiaCityPathToCinnabarIsland   ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_FuchsiaCityPathToIndigoPlateau    ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_FuchsiaCityPathToSaffronCity      ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_ScienceClubPaths:
-	table_width 2, OverworldMap_ScienceClubPaths
-	dw OverworldMap_ScienceClubPathToMasonLaboratory
-	dw OverworldMap_ScienceClubPathToIshiharasHouse
-	dw OverworldMap_StraightPath
-	dw OverworldMap_ScienceClubPathToRockClub
-	dw OverworldMap_ScienceClubPathToWaterClub
-	dw OverworldMap_ScienceClubPathToLightningClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_NoMovement
-	dw OverworldMap_StraightPath
-	dw OverworldMap_ScienceClubPathToChallengeHall
-	dw OverworldMap_StraightPath
+OverworldMap_CinnabarIslandPaths:
+	table_width 2, OverworldMap_CinnabarIslandPaths
+	dw OverworldMap_StraightPath                      ; OWMAP_PALLET_TOWN
+	dw OverworldMap_StraightPath                      ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_PEWTER_CITY
+	dw OverworldMap_CinnabarIslandPathToCeruleanCity  ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_CinnabarIslandPathToLavenderTown  ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_CinnabarIslandPathToVermilionCity ; OWMAP_VERMILION_CITY
+	dw OverworldMap_CinnabarIslandPathToCeladonCity   ; OWMAP_CELADON_CITY
+	dw OverworldMap_CinnabarIslandPathToFuchsiaCity   ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_NoMovement                        ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_CinnabarIslandPathToIndigoPlateau ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_CinnabarIslandPathToSaffronCity   ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_FireClubPaths:
-	table_width 2, OverworldMap_FireClubPaths
-	dw OverworldMap_FireClubPathToMasonLaboratory
-	dw OverworldMap_FireClubPathToIshiharasHouse
-	dw OverworldMap_FireClubPathToFightingClub
-	dw OverworldMap_FireClubPathToRockClub
-	dw OverworldMap_FireClubPathToWaterClub
-	dw OverworldMap_FireClubPathToLightningClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_NoMovement
-	dw OverworldMap_FireClubPathToChallengeHall
-	dw OverworldMap_FireClubPathToPokemonDome
+OverworldMap_IndigoPlateauPaths:
+	table_width 2, OverworldMap_IndigoPlateauPaths
+	dw OverworldMap_IndigoPlateauPathToPalletTown     ; OWMAP_PALLET_TOWN
+	dw OverworldMap_IndigoPlateauPathToViridianCity   ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_IndigoPlateauPathToPewterCity     ; OWMAP_PEWTER_CITY
+	dw OverworldMap_IndigoPlateauPathToCeruleanCity   ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_IndigoPlateauPathToLavenderTown   ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_IndigoPlateauPathToVermilionCity  ; OWMAP_VERMILION_CITY
+	dw OverworldMap_IndigoPlateauPathToCeladonCity    ; OWMAP_CELADON_CITY
+	dw OverworldMap_IndigoPlateauPathToFuchsiaCity    ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_IndigoPlateauPathToCinnabarIsland ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_NoMovement                        ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_IndigoPlateauPathToSaffronCity    ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_ChallengeHallPaths:
-	table_width 2, OverworldMap_ChallengeHallPaths
-	dw OverworldMap_ChallengeHallPathToMasonLaboratory
-	dw OverworldMap_ChallengeHallPathToIshiharasHouse
-	dw OverworldMap_ChallengeHallPathToFightingClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_ChallengeHallPathToWaterClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_ChallengeHallPathToGrassClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_ChallengeHallPathToScienceClub
-	dw OverworldMap_ChallengeHallPathToFireClub
-	dw OverworldMap_NoMovement
-	dw OverworldMap_StraightPath
+OverworldMap_SaffronCityPaths:
+	table_width 2, OverworldMap_SaffronCityPaths
+	dw OverworldMap_SaffronCityPathToPalletTown       ; OWMAP_PALLET_TOWN
+	dw OverworldMap_SaffronCityPathToViridianCity     ; OWMAP_VIRIDIAN_CITY
+	dw OverworldMap_SaffronCityPathToPewterCity       ; OWMAP_PEWTER_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CERULEAN_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_LAVENDER_TOWN
+	dw OverworldMap_StraightPath                      ; OWMAP_VERMILION_CITY
+	dw OverworldMap_StraightPath                      ; OWMAP_CELADON_CITY
+	dw OverworldMap_SaffronCityPathToFuchsiaCity      ; OWMAP_FUCHSIA_CITY
+	dw OverworldMap_SaffronCityPathToCinnabarIsland   ; OWMAP_CINNABAR_ISLAND
+	dw OverworldMap_SaffronCityPathToIndigoPlateau    ; OWMAP_INDIGO_PLATEAU
+	dw OverworldMap_NoMovement                        ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS - 1
 
-OverworldMap_PokemonDomePaths:
-	table_width 2, OverworldMap_PokemonDomePaths
-	dw OverworldMap_PokemonDomePathToMasonLaboratory
-	dw OverworldMap_PokemonDomePathToIshiharasHouse
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_PokemonDomePathToWaterClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_StraightPath
-	dw OverworldMap_PokemonDomePathToFireClub
-	dw OverworldMap_StraightPath
-	dw OverworldMap_NoMovement
-	assert_table_length NUM_OWMAPS - 1
-
-OverworldMap_IshiharasHousePathToRockClub:
-OverworldMap_RockClubPathToIshiharasHouse:
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToWaterClub:
-	db $2c, $78
-	db $3c, $68
-	db $5c, $68
-	db $5c, $7c
-	db $74, $7c
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToMasonLaboratory:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $68
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToFireClub:
-	db $2c, $28
-	db $3c, $40
-	db $5c, $30
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FireClubPathToIshiharasHouse:
-	db $5c, $30
-	db $3c, $40
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToIshiharasHouse:
-	db $2c, $78
-	db $3c, $68
-	db $3c, $40
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToMasonLaboratory:
-	db $2c, $28
-	db $3c, $40
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToRockClub:
-	db $2c, $78
-	db $3c, $68
-	db $3c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_RockClubPathToMasonLaboratory:
-	db $3c, $48
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToLightningClub:
-OverworldMap_LightningClubPathToMasonLaboratory:
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToGrassClub:
-	db $2c, $78
-	db $3c, $68
-	db $5c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_GrassClubPathToMasonLaboratory:
-	db $5c, $68
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToPsychicClub:
-	db $2c, $78
-	db $3c, $68
-	db $5c, $68
-	db $5c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_PsychicClubPathToMasonLaboratory:
-	db $5c, $48
-	db $5c, $68
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToScienceClub:
-	db $2c, $78
-	db $3c, $68
-	db $5c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_ScienceClubPathToMasonLaboratory:
-	db $5c, $68
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToFireClub:
-	db $2c, $78
-	db $3c, $68
-	db $5c, $68
-	db $5c, $30
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FireClubPathToMasonLaboratory:
-	db $5c, $30
-	db $5c, $68
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToChallengeHall:
-	db $2c, $78
-	db $3c, $68
-	db $3c, $40
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_ChallengeHallPathToMasonLaboratory:
-	db $3c, $40
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_MasonLaboratoryPathToPokemonDome:
-	db $2c, $78
-	db $3c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_PokemonDomePathToMasonLaboratory:
-	db $3c, $68
-	db $2c, $78
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToFightingClub:
-OverworldMap_FightingClubPathToIshiharasHouse:
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToWaterClub:
-	db $2c, $28
-	db $3c, $48
-	db $3c, $68
-	db $5c, $68
-	db $5c, $7c
-	db $74, $7c
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToIshiharasHouse:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $68
-	db $3c, $68
-	db $3c, $48
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToLightningClub:
-OverworldMap_LightningClubPathToIshiharasHouse:
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToGrassClub:
-	db $2c, $28
-	db $3c, $40
-	db $5c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_GrassClubPathToIshiharasHouse:
-	db $5c, $48
-	db $3c, $40
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToPsychicClub:
-	db $2c, $28
-	db $3c, $40
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_PsychicClubPathToIshiharasHouse:
-	db $3c, $40
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToScienceClub:
-	db $2c, $28
-	db $3c, $40
-	db $5c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_ScienceClubPathToIshiharasHouse:
-	db $5c, $48
-	db $3c, $40
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToChallengeHall:
-	db $2c, $28
-	db $3c, $40
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_ChallengeHallPathToIshiharasHouse:
-	db $3c, $40
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_IshiharasHousePathToPokemonDome:
-	db $2c, $28
-	db $3c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_PokemonDomePathToIshiharasHouse:
-	db $3c, $48
-	db $2c, $28
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FightingClubPathToRockClub:
-	db $3c, $68
-	db $3c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_RockClubPathToFightingClub:
-	db $3c, $48
-	db $3c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FightingClubPathToWaterClub:
-	db $3c, $68
-	db $5c, $68
-	db $5c, $7c
-	db $74, $7c
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToFightingClub:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $68
-	db $3c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FightingClubPathToPsychicClub:
-OverworldMap_PsychicClubPathToFightingClub:
-	db $5c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FightingClubPathToFireClub:
-	db $5c, $68
-	db $5c, $30
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FireClubPathToFightingClub:
-	db $5c, $30
-	db $5c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FightingClubPathToChallengeHall:
-OverworldMap_ChallengeHallPathToFightingClub:
-	db $3c, $40
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_RockClubPathToWaterClub:
-	db $3c, $48
-	db $3c, $68
-	db $5c, $68
-	db $5c, $7c
-	db $74, $7c
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToRockClub:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $68
-	db $3c, $68
-	db $3c, $48
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_RockClubPathToGrassClub:
-OverworldMap_GrassClubPathToRockClub:
-	db $3c, $40
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_RockClubPathToFireClub:
-	db $3c, $40
-	db $5c, $30
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_FireClubPathToRockClub:
-	db $5c, $30
-	db $3c, $40
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToLightningClub:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $68
-	db $3c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_LightningClubPathToWaterClub:
-	db $3c, $68
-	db $5c, $68
-	db $5c, $7c
-	db $74, $7c
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToGrassClub:
-OverworldMap_WaterClubPathToPsychicClub:
-OverworldMap_WaterClubPathToScienceClub:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $68
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_GrassClubPathToWaterClub:
-OverworldMap_PsychicClubPathToWaterClub:
-OverworldMap_ScienceClubPathToWaterClub:
-	db $5c, $68
-	db $5c, $7c
-	db $74, $7c
-	db $00, $00
-	db $ff, $ff
-
-OverworldMap_WaterClubPathToFireClub:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $30
+OverworldMap_IndigoPlateauPathToCeruleanCity:
+	path_pos  2,  9
+	path_pos  4,  9
+OverworldMap_PalletTownPathToCeruleanCity:
+OverworldMap_ViridianCityPathToCeruleanCity:
+OverworldMap_CinnabarIslandPathToCeruleanCity:
+	path_pos  4,  4
+OverworldMap_PewterCityPathToCeruleanCity:
+	path_pos  7,  4
+	path_pos  7,  3
+	db $00, $00
+	db $ff, $ff
+
+OverworldMap_IndigoPlateauPathToLavenderTown:
+	path_pos  2,  9
+	path_pos  4,  9
+OverworldMap_PalletTownPathToLavenderTown:
+OverworldMap_ViridianCityPathToLavenderTown:
+OverworldMap_CinnabarIslandPathToLavenderTown:
+	path_pos  4,  4
+OverworldMap_PewterCityPathToLavenderTown:
+	path_pos  7,  4
+	path_pos  7,  3
+	path_pos 16,  3
+	db $00, $00
+	db $ff, $ff
+
+OverworldMap_IndigoPlateauPathToVermilionCity:
+OverworldMap_IndigoPlateauPathToSaffronCity:
+	path_pos  2,  9
+	path_pos  4,  9
+OverworldMap_PalletTownPathToVermilionCity:
+OverworldMap_PalletTownPathToSaffronCity:
+OverworldMap_ViridianCityPathToVermilionCity:
+OverworldMap_ViridianCityPathToSaffronCity:
+OverworldMap_CinnabarIslandPathToSaffronCity:
+	path_pos  4,  4
+OverworldMap_PewterCityPathToVermilionCity:
+OverworldMap_PewterCityPathToSaffronCity:
+	path_pos  7,  4
+	path_pos  7,  3
+	path_pos 12,  3
+	db $00, $00
+	db $ff, $ff
+
+OverworldMap_IndigoPlateauPathToCeladonCity:
+	path_pos  2,  9
+	path_pos  4,  9
+OverworldMap_PalletTownPathToCeladonCity:
+OverworldMap_ViridianCityPathToCeladonCity:
+	path_pos  4,  4
+OverworldMap_PewterCityPathToCeladonCity:
+	path_pos  7,  4
+	path_pos  7,  3
+	path_pos 12,  3
+OverworldMap_CeruleanCityPathToLavenderTown:
+OverworldMap_CeruleanCityPathToCeladonCity:
+OverworldMap_LavenderTownPathToCeruleanCity:
+OverworldMap_LavenderTownPathToVermilionCity:
+OverworldMap_VermilionCityPathToLavenderTown:
+OverworldMap_VermilionCityPathToCeladonCity:
+OverworldMap_CeladonCityPathToCeruleanCity:
+OverworldMap_CeladonCityPathToVermilionCity:
+	path_pos 12,  6
+	db $00, $00
+	db $ff, $ff
+
+OverworldMap_IndigoPlateauPathToFuchsiaCity:
+	path_pos  2,  9
+	path_pos  4,  9
+OverworldMap_PalletTownPathToFuchsiaCity:
+OverworldMap_ViridianCityPathToFuchsiaCity:
+OverworldMap_PewterCityPathToFuchsiaCity:
+	path_pos  4, 16
+OverworldMap_FuchsiaCityPathToCinnabarIsland:
+OverworldMap_CinnabarIslandPathToFuchsiaCity:
+	path_pos 10, 16
+	db $00, $00
+	db $ff, $ff
+
+OverworldMap_LavenderTownPathToIndigoPlateau:
+OverworldMap_CeladonCityPathToIndigoPlateau:
+	path_pos 12,  6
+OverworldMap_SaffronCityPathToIndigoPlateau:
+	path_pos 12,  3
+OverworldMap_CeruleanCityPathToIndigoPlateau:
+	path_pos  7,  3
+	path_pos  7,  4
+	path_pos  4,  4
+OverworldMap_PalletTownPathToIndigoPlateau:
+OverworldMap_PewterCityPathToIndigoPlateau:
+OverworldMap_CinnabarIslandPathToIndigoPlateau:
+	path_pos  4,  9
+OverworldMap_ViridianCityPathToIndigoPlateau:
+OverworldMap_IndigoPlateauPathToViridianCity:
+	path_pos  2,  9
+	db $00, $00
+	db $ff, $ff
+
+OverworldMap_LavenderTownPathToPalletTown:
+OverworldMap_LavenderTownPathToViridianCity:
+	path_pos 16,  3
+OverworldMap_CeruleanCityPathToPalletTown:
+OverworldMap_CeruleanCityPathToViridianCity:
+OverworldMap_CeruleanCityPathToCinnabarIsland:
+	path_pos  7,  3
+	path_pos  7,  4
+	path_pos  4,  4
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_FireClubPathToWaterClub:
-	db $5c, $30
-	db $5c, $7c
-	db $74, $7c
+OverworldMap_LavenderTownPathToPewterCity:
+	path_pos 16,  3
+OverworldMap_CeruleanCityPathToPewterCity:
+	path_pos  7,  3
+	path_pos  7,  4
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_WaterClubPathToChallengeHall:
-	db $74, $7c
-	db $5c, $7c
-	db $5c, $48
+OverworldMap_CeruleanCityPathToFuchsiaCity:
+	path_pos 16,  3
+OverworldMap_LavenderTownPathToFuchsiaCity:
+	path_pos 16, 12
+	path_pos 13, 12
+	path_pos 13, 14
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_ChallengeHallPathToWaterClub:
-	db $5c, $48
-	db $5c, $7c
-	db $74, $7c
+OverworldMap_VermilionCityPathToCinnabarIsland:
+	path_pos 16, 10
+OverworldMap_LavenderTownPathToCinnabarIsland:
+	path_pos 16, 12
+	path_pos 13, 12
+	path_pos 13, 14
+	path_pos 10, 14
+	path_pos 10, 16
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_WaterClubPathToPokemonDome:
-	db $74, $7c
-	db $5c, $7c
+OverworldMap_VermilionCityPathToPalletTown:
+OverworldMap_VermilionCityPathToViridianCity:
+	path_pos 16, 10
+	path_pos 16, 12
+	path_pos 13, 12
+	path_pos 13, 14
+	path_pos 10, 14
+OverworldMap_FuchsiaCityPathToPalletTown:
+OverworldMap_FuchsiaCityPathToViridianCity:
+OverworldMap_FuchsiaCityPathToPewterCity:
+	path_pos 10, 16
+	path_pos  4, 16
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_PokemonDomePathToWaterClub:
-	db $5c, $7c
-	db $74, $7c
+OverworldMap_CeladonCityPathToPewterCity:
+	path_pos 12,  6
+OverworldMap_VermilionCityPathToPewterCity:
+OverworldMap_SaffronCityPathToPewterCity:
+	path_pos 12,  3
+	path_pos  7,  3
+	path_pos  7,  4
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_LightningClubPathToPsychicClub:
-OverworldMap_PsychicClubPathToLightningClub:
-	db $3c, $40
+OverworldMap_SaffronCityPathToFuchsiaCity:
+	path_pos 12, 10
+OverworldMap_VermilionCityPathToFuchsiaCity:
+	path_pos 16, 10
+	path_pos 16, 12
+	path_pos 13, 12
+	path_pos 13, 14
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_LightningClubPathToScienceClub:
-	db $3c, $68
-	db $5c, $68
+OverworldMap_VermilionCityPathToIndigoPlateau:
+	path_pos 16, 10
+	path_pos 16, 12
+	path_pos 13, 12
+	path_pos 13, 14
+	path_pos 10, 14
+OverworldMap_FuchsiaCityPathToIndigoPlateau:
+	path_pos 10, 16
+	path_pos  4, 16
+	path_pos  4,  9
+	path_pos  2,  9
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_ScienceClubPathToLightningClub:
-	db $5c, $68
-	db $3c, $68
+OverworldMap_CeladonCityPathToPalletTown:
+OverworldMap_CeladonCityPathToViridianCity:
+OverworldMap_CeladonCityPathToCinnabarIsland:
+	path_pos 12,  6
+OverworldMap_SaffronCityPathToPalletTown:
+OverworldMap_SaffronCityPathToViridianCity:
+OverworldMap_SaffronCityPathToCinnabarIsland:
+	path_pos 12,  3
+	path_pos  7,  3
+	path_pos  7,  4
+	path_pos  4,  4
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_LightningClubPathToFireClub:
-	db $3c, $48
-	db $5c, $30
+OverworldMap_CeladonCityPathToFuchsiaCity:
+	path_pos  6,  6
+	path_pos  6, 14
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_FireClubPathToLightningClub:
-	db $5c, $30
-	db $3c, $48
+OverworldMap_FuchsiaCityPathToCeruleanCity:
+	path_pos 13, 14
+	path_pos 13, 12
+	path_pos 16, 12
+	path_pos 16,  3
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_GrassClubPathToChallengeHall:
-OverworldMap_ScienceClubPathToChallengeHall:
-OverworldMap_ChallengeHallPathToGrassClub:
-OverworldMap_ChallengeHallPathToScienceClub:
-	db $5c, $48
+OverworldMap_FuchsiaCityPathToLavenderTown:
+	path_pos 13, 14
+	path_pos 13, 12
+	path_pos 16, 12
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_FireClubPathToChallengeHall:
-OverworldMap_FireClubPathToPokemonDome:
-OverworldMap_ChallengeHallPathToFireClub:
-OverworldMap_PokemonDomePathToFireClub:
-	db $5c, $30
+OverworldMap_CinnabarIslandPathToVermilionCity:
+	path_pos 10, 16
+	path_pos 10, 14
+OverworldMap_FuchsiaCityPathToVermilionCity:
+	path_pos 13, 14
+	path_pos 13, 12
+	path_pos 16, 12
+	path_pos 16, 10
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_RockClubPathToScienceClub:
-	db $3c, $40
-	db $5c, $48
+OverworldMap_CinnabarIslandPathToCeladonCity:
+	path_pos 10, 16
+	path_pos 10, 14
+OverworldMap_FuchsiaCityPathToCeladonCity:
+OverworldMap_FuchsiaCityPathToSaffronCity:
+	path_pos  6, 14
+	path_pos  6,  6
 	db $00, $00
 	db $ff, $ff
 
-OverworldMap_ScienceClubPathToRockClub:
-	db $5c, $48
-	db $3c, $40
+OverworldMap_IndigoPlateauPathToPalletTown:
+OverworldMap_IndigoPlateauPathToPewterCity:
+OverworldMap_IndigoPlateauPathToCinnabarIsland:
+	path_pos  2,  9
+	path_pos  4,  9
 	db $00, $00
 	db $ff, $ff
 

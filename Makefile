@@ -169,4 +169,4 @@ src/gfx/titlescreen/title_screen_cgb.2bpp: rgbgfx += -x 12
 
 # remove -m if you don't care for matching
 %.lz: %
-	tools/compressor -m $(tools/compressor) $< $@
+	tools/compressor $(tools/compressor) $< $@

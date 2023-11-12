@@ -15,7 +15,7 @@ LoadMapGfxAndPermissions:
 	cp OVERWORLD_MAP
 	ret nz
 	farcall OverworldMap_PrintMapName
-	farcall OverworldMap_InitVolcanoSprite
+;	farcall OverworldMap_InitVolcanoSprite
 	ret
 
 ; reloads the map tiles and permissions

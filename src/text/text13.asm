@@ -183,3 +183,47 @@ RecycleDescription:
 	line "in your discard pile on top of your"
 	line "deck."
 	done
+
+OverworldMapPalletTownText:
+	text "    Pallet Town     "
+	done
+
+OverworldMapViridianCityText:
+	text "    Viridian City   "
+	done
+
+OverworldMapPewterCityText:
+	text "     Pewter City    "
+	done
+
+OverworldMapCeruleanCityText:
+	text "    Cerulean City   "
+	done
+
+OverworldMapLavenderTownText:
+	text "    Lavender Town   "
+	done
+
+OverworldMapVermilionCityText:
+	text "   Vermilion City   "
+	done
+
+OverworldMapCeladonCityText:
+	text "    Celadon City    "
+	done
+
+OverworldMapFuchsiaCityText:
+	text "    Fuchsia City    "
+	done
+
+OverworldMapCinnabarIslandText:
+	text "   Cinnabar Island  "
+	done
+
+OverworldMapIndigoPlateauText:
+	text "     Indigo Plateau "
+	done
+
+OverworldMapSaffronCityText:
+	text "    Saffron City    "
+	done

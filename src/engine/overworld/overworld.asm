@@ -228,7 +228,7 @@ WhiteOutDMGPals:
 	ret
 
 Func_c1b1:
-	ld a, OWMAP_POKEMON_DOME
+	ld a, OWMAP_PALLET_TOWN
 	ld [wOverworldMapSelection], a
 	ld a, OVERWORLD_MAP
 	ld [wTempMap], a

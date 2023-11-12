@@ -39,20 +39,18 @@ DEF NUM_MAPS EQU const_value
 
 ; overworld map selections
 	const_def 1
-	const OWMAP_MASON_LABORATORY ; $01
-	const OWMAP_ISHIHARAS_HOUSE  ; $02
-	const OWMAP_FIGHTING_CLUB    ; $03
-	const OWMAP_ROCK_CLUB        ; $04
-	const OWMAP_WATER_CLUB       ; $05
-	const OWMAP_LIGHTNING_CLUB   ; $06
-	const OWMAP_GRASS_CLUB       ; $07
-	const OWMAP_PSYCHIC_CLUB     ; $08
-	const OWMAP_SCIENCE_CLUB     ; $09
-	const OWMAP_FIRE_CLUB        ; $0A
-	const OWMAP_CHALLENGE_HALL   ; $0B
-	const OWMAP_POKEMON_DOME     ; $0C
+	const OWMAP_PALLET_TOWN
+	const OWMAP_VIRIDIAN_CITY
+	const OWMAP_PEWTER_CITY
+	const OWMAP_CERULEAN_CITY
+	const OWMAP_LAVENDER_TOWN
+	const OWMAP_VERMILION_CITY
+	const OWMAP_CELADON_CITY
+	const OWMAP_FUCHSIA_CITY
+	const OWMAP_CINNABAR_ISLAND
+	const OWMAP_INDIGO_PLATEAU
+	const OWMAP_SAFFRON_CITY
 DEF NUM_OWMAPS EQU const_value
-	const OWMAP_MYSTERY_HOUSE    ; $0D for OverworldMapNames
 DEF NUM_OWMAP_NAMES EQU const_value
 
 

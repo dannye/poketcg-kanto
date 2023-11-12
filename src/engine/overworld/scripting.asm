@@ -158,8 +158,8 @@ ImakuniPossibleRooms:
 
 DetermineChallengeHallEvent:
 	ld a, [wOverworldMapSelection]
-	cp OWMAP_CHALLENGE_HALL
-	jr z, .done
+;	cp OWMAP_CHALLENGE_HALL
+;	jr z, .done
 	get_event_value EVENT_RECEIVED_LEGENDARY_CARDS
 	or a
 	jr nz, .challenge_cup_three
@@ -1828,7 +1828,7 @@ Unknown_d3dd:
 	db $03, $05, $07
 
 ScriptCommand_WalkPlayerToMasonLaboratory:
-	ld a, OWMAP_MASON_LABORATORY
+	ld a, OWMAP_PALLET_TOWN
 	ld [wOverworldMapSelection], a
 	farcall OverworldMap_BeginPlayerMovement
 .asm_d3e9

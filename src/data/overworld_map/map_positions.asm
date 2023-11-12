@@ -1,16 +1,19 @@
+MACRO map_pos
+	db \1 * 8 - 4, \2 * 8 - 8
+ENDM
+
 OverworldMap_MapPositions:
 	table_width 2, OverworldMap_MapPositions
 	db $00, $00 ; unused
-	db $0c, $68 ; OWMAP_MASON_LABORATORY
-	db $04, $18 ; OWMAP_ISHIHARAS_HOUSE
-	db $34, $68 ; OWMAP_FIGHTING_CLUB
-	db $14, $38 ; OWMAP_ROCK_CLUB
-	db $6c, $64 ; OWMAP_WATER_CLUB
-	db $24, $50 ; OWMAP_LIGHTNING_CLUB
-	db $7c, $40 ; OWMAP_GRASS_CLUB
-	db $5c, $2c ; OWMAP_PSYCHIC_CLUB
-	db $7c, $20 ; OWMAP_SCIENCE_CLUB
-	db $6c, $10 ; OWMAP_FIRE_CLUB
-	db $3c, $20 ; OWMAP_CHALLENGE_HALL
-	db $44, $44 ; OWMAP_POKEMON_DOME
+	map_pos  4, 12 ; OWMAP_PALLET_TOWN
+	map_pos  4,  9 ; OWMAP_VIRIDIAN_CITY
+	map_pos  4,  4 ; OWMAP_PEWTER_CITY
+	map_pos 12,  3 ; OWMAP_CERULEAN_CITY
+	map_pos 16,  6 ; OWMAP_LAVENDER_TOWN
+	map_pos 12, 10 ; OWMAP_VERMILION_CITY
+	map_pos  9,  6 ; OWMAP_CELADON_CITY
+	map_pos 10, 14 ; OWMAP_FUCHSIA_CITY
+	map_pos  4, 16 ; OWMAP_CINNABAR_ISLAND
+	map_pos  2,  3 ; OWMAP_INDIGO_PLATEAU
+	map_pos 12,  6 ; OWMAP_SAFFRON_CITY
 	assert_table_length NUM_OWMAPS
