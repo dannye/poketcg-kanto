@@ -1,3 +1,9 @@
+# Pokémon TCG - Kanto
+
+This is a WIP mod of Pokémon TCG that replaces the entire world with the world of Kanto.
+
+Original README follows...
+
 # Pokémon TCG [![Build Status][ci-badge]][ci]
 
 This is a disassembly of Pokémon TCG.
