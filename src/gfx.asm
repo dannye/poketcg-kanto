@@ -2376,3 +2376,67 @@ PalletTownCGBTilemap::
 	INCBIN "data/maps/tiles/cgb/pallet_town.bgmap.lz"
 PalletTownCGBPermissions:
 	INCBIN "data/maps/permissions/pallet_town.bin.lz"
+
+ViridianCityTLTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_tl.dimensions"
+	dw ViridianCityTLPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/viridian_city_tl.bin.lz"
+ViridianCityTLPermissions:
+	INCBIN "data/maps/permissions/viridian_city_tl.bin.lz"
+
+ViridianCityTLCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_tl.dimensions"
+	dw ViridianCityTLCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/viridian_city_tl.bgmap.lz"
+ViridianCityTLCGBPermissions:
+	INCBIN "data/maps/permissions/viridian_city_tl.bin.lz"
+
+ViridianCityTRTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_tr.dimensions"
+	dw ViridianCityTRPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/viridian_city_tr.bin.lz"
+ViridianCityTRPermissions:
+	INCBIN "data/maps/permissions/viridian_city_tr.bin.lz"
+
+ViridianCityTRCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_tr.dimensions"
+	dw ViridianCityTRCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/viridian_city_tr.bgmap.lz"
+ViridianCityTRCGBPermissions:
+	INCBIN "data/maps/permissions/viridian_city_tr.bin.lz"
+
+ViridianCityBLTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_bl.dimensions"
+	dw ViridianCityBLPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/viridian_city_bl.bin.lz"
+ViridianCityBLPermissions:
+	INCBIN "data/maps/permissions/viridian_city_bl.bin.lz"
+
+ViridianCityBLCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_bl.dimensions"
+	dw ViridianCityBLCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/viridian_city_bl.bgmap.lz"
+ViridianCityBLCGBPermissions:
+	INCBIN "data/maps/permissions/viridian_city_bl.bin.lz"
+
+ViridianCityBRTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_br.dimensions"
+	dw ViridianCityBRPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/viridian_city_br.bin.lz"
+ViridianCityBRPermissions:
+	INCBIN "data/maps/permissions/viridian_city_br.bin.lz"
+
+ViridianCityBRCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/viridian_city_br.dimensions"
+	dw ViridianCityBRCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/viridian_city_br.bgmap.lz"
+ViridianCityBRCGBPermissions:
+	INCBIN "data/maps/permissions/viridian_city_br.bin.lz"

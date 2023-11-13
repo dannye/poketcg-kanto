@@ -34,6 +34,10 @@
 	const POKEMON_DOME            ; $20
 	const HALL_OF_HONOR           ; $21
 	const PALLET_TOWN
+	const VIRIDIAN_CITY_TL
+	const VIRIDIAN_CITY_TR
+	const VIRIDIAN_CITY_BL
+	const VIRIDIAN_CITY_BR
 
 DEF NUM_MAPS EQU const_value
 

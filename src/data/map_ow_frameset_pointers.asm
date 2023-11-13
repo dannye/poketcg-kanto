@@ -35,5 +35,9 @@ MapOWFramesetPointers:
 	dw DefaultOWFrameset,         DefaultOWFrameset            ; POKEMON_DOME_ENTRANCE
 	dw DefaultOWFrameset,         DefaultOWFrameset            ; POKEMON_DOME
 	dw HallOfHonorOWFrameset,     HallOfHonorOWFrameset        ; HALL_OF_HONOR
-	dw PalletTownOWFrameset,      PalletTownOWFrameset         ; PALLET_TOWN
+	dw KantoOWFrameset,           KantoOWFrameset              ; PALLET_TOWN
+	dw KantoOWFrameset,           KantoOWFrameset              ; VIRIDIAN_CITY_TL
+	dw KantoOWFrameset,           KantoOWFrameset              ; VIRIDIAN_CITY_TR
+	dw KantoOWFrameset,           KantoOWFrameset              ; VIRIDIAN_CITY_BL
+	dw KantoOWFrameset,           KantoOWFrameset              ; VIRIDIAN_CITY_BR
 	assert_table_length NUM_MAPS

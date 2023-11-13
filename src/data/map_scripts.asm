@@ -364,4 +364,44 @@ MapScripts::
 	dw NULL
 	dw NULL
 
+; VIRIDIAN_CITY_TL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+
+; VIRIDIAN_CITY_TR
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+
+; VIRIDIAN_CITY_BL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+
+; VIRIDIAN_CITY_BR
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+	dw NULL
+
 	assert_table_length NUM_MAPS

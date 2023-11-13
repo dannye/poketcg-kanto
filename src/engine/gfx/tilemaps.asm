@@ -69,6 +69,14 @@ Tilemaps:
 	tilemap HallOfHonorCGBTilemap,             TILESET_HALL_OF_HONOR               ; TILEMAP_HALL_OF_HONOR_CGB
 	tilemap PalletTownTilemap,                 TILESET_KANTO                       ; TILEMAP_PALLET_TOWN
 	tilemap PalletTownCGBTilemap,              TILESET_KANTO                       ; TILEMAP_PALLET_TOWN_CGB
+	tilemap ViridianCityTLTilemap,             TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_TL
+	tilemap ViridianCityTLCGBTilemap,          TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_TL_CGB
+	tilemap ViridianCityTRTilemap,             TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_TR
+	tilemap ViridianCityTRCGBTilemap,          TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_TR_CGB
+	tilemap ViridianCityBLTilemap,             TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BL
+	tilemap ViridianCityBLCGBTilemap,          TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BL_CGB
+	tilemap ViridianCityBRTilemap,             TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BR
+	tilemap ViridianCityBRCGBTilemap,          TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BR_CGB
 	tilemap CardPopCGBTilemap,                 TILESET_CARD_POP                    ; TILEMAP_CARD_POP_CGB
 	tilemap CardPopTilemap,                    TILESET_CARD_POP                    ; TILEMAP_CARD_POP
 	tilemap GrassMedalTilemap,                 TILESET_MEDAL                       ; TILEMAP_GRASS_MEDAL

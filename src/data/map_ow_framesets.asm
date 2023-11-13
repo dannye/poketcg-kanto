@@ -243,7 +243,7 @@ HallOfHonorOWFrameset:
 	ow_frame  0, $a7, 0, HallOfHonorTilesetGfx, $2f
 	db -1 ; end
 
-PalletTownOWFrameset:
+KantoOWFrameset:
 	db $3, $73, $73
 
 	ow_frame 20, $94, 0, KantoTilesetGfx, $63
