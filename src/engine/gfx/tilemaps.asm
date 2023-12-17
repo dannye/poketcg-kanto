@@ -77,6 +77,14 @@ Tilemaps:
 	tilemap ViridianCityBLCGBTilemap,          TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BL_CGB
 	tilemap ViridianCityBRTilemap,             TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BR
 	tilemap ViridianCityBRCGBTilemap,          TILESET_KANTO                       ; TILEMAP_VIRIDIAN_CITY_BR_CGB
+	tilemap PewterCityTLTilemap,               TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_TL
+	tilemap PewterCityTLCGBTilemap,            TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_TL_CGB
+	tilemap PewterCityTRTilemap,               TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_TR
+	tilemap PewterCityTRCGBTilemap,            TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_TR_CGB
+	tilemap PewterCityBLTilemap,               TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_BL
+	tilemap PewterCityBLCGBTilemap,            TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_BL_CGB
+	tilemap PewterCityBRTilemap,               TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_BR
+	tilemap PewterCityBRCGBTilemap,            TILESET_KANTO                       ; TILEMAP_PEWTER_CITY_BR_CGB
 	tilemap CardPopCGBTilemap,                 TILESET_CARD_POP                    ; TILEMAP_CARD_POP_CGB
 	tilemap CardPopTilemap,                    TILESET_CARD_POP                    ; TILEMAP_CARD_POP
 	tilemap GrassMedalTilemap,                 TILESET_MEDAL                       ; TILEMAP_GRASS_MEDAL

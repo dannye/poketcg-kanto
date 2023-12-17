@@ -39,6 +39,10 @@ WarpDataPointers:
 	dw ViridianCityTRWarpData
 	dw ViridianCityBLWarpData
 	dw ViridianCityBRWarpData
+	dw PewterCityTLWarpData
+	dw PewterCityTRWarpData
+	dw PewterCityBLWarpData
+	dw PewterCityBRWarpData
 	assert_table_length NUM_MAPS
 
 ; each warp is five bytes long
@@ -379,4 +383,142 @@ ViridianCityBRWarpData:
 	db 16,  0, VIRIDIAN_CITY_TR, 16, 28
 	db 26,  0, VIRIDIAN_CITY_TR, 26, 28
 	db 28,  0, VIRIDIAN_CITY_TR, 28, 28
+	db $00, $00
+
+PewterCityTLWarpData:
+	db 30,  2, PEWTER_CITY_TR,  2,  2
+	db 30,  4, PEWTER_CITY_TR,  2,  4
+	db 30,  6, PEWTER_CITY_TR,  2,  6
+	db 30,  8, PEWTER_CITY_TR,  2,  8
+	db 30, 10, PEWTER_CITY_TR,  2, 10
+	db 30, 12, PEWTER_CITY_TR,  2, 12
+	db 30, 14, PEWTER_CITY_TR,  2, 14
+	db 30, 16, PEWTER_CITY_TR,  2, 16
+	db 30, 18, PEWTER_CITY_TR,  2, 18
+	db 30, 20, PEWTER_CITY_TR,  2, 20
+	db 30, 22, PEWTER_CITY_TR,  2, 22
+	db 30, 24, PEWTER_CITY_TR,  2, 24
+	db 30, 26, PEWTER_CITY_TR,  2, 26
+	db 30, 28, PEWTER_CITY_TR,  2, 28
+	db 30, 30, PEWTER_CITY_TR,  2, 30
+	db  2, 30, PEWTER_CITY_BL,  2,  2
+	db  4, 30, PEWTER_CITY_BL,  4,  2
+	db  6, 30, PEWTER_CITY_BL,  6,  2
+	db  8, 30, PEWTER_CITY_BL,  8,  2
+	db 10, 30, PEWTER_CITY_BL, 10,  2
+	db 12, 30, PEWTER_CITY_BL, 12,  2
+	db 14, 30, PEWTER_CITY_BL, 14,  2
+	db 16, 30, PEWTER_CITY_BL, 16,  2
+	db 18, 30, PEWTER_CITY_BL, 18,  2
+	db 20, 30, PEWTER_CITY_BL, 20,  2
+	db 22, 30, PEWTER_CITY_BL, 22,  2
+	db 24, 30, PEWTER_CITY_BL, 24,  2
+	db 26, 30, PEWTER_CITY_BL, 26,  2
+	db 28, 30, PEWTER_CITY_BL, 28,  2
+	db 30, 30, PEWTER_CITY_BL, 30,  2
+	db $00, $00
+
+PewterCityTRWarpData:
+	db  0,  2, PEWTER_CITY_TL, 28,  2
+	db  0,  4, PEWTER_CITY_TL, 28,  4
+	db  0,  6, PEWTER_CITY_TL, 28,  6
+	db  0,  8, PEWTER_CITY_TL, 28,  8
+	db  0, 10, PEWTER_CITY_TL, 28, 10
+	db  0, 12, PEWTER_CITY_TL, 28, 12
+	db  0, 14, PEWTER_CITY_TL, 28, 14
+	db  0, 16, PEWTER_CITY_TL, 28, 16
+	db  0, 18, PEWTER_CITY_TL, 28, 18
+	db  0, 20, PEWTER_CITY_TL, 28, 20
+	db  0, 22, PEWTER_CITY_TL, 28, 22
+	db  0, 24, PEWTER_CITY_TL, 28, 24
+	db  0, 26, PEWTER_CITY_TL, 28, 26
+	db  0, 28, PEWTER_CITY_TL, 28, 28
+	db  0, 30, PEWTER_CITY_TL, 28, 30
+	db  2, 30, PEWTER_CITY_BR,  2,  2
+	db  4, 30, PEWTER_CITY_BR,  4,  2
+	db  6, 30, PEWTER_CITY_BR,  6,  2
+	db  8, 30, PEWTER_CITY_BR,  8,  2
+	db 10, 30, PEWTER_CITY_BR, 10,  2
+	db 12, 30, PEWTER_CITY_BR, 12,  2
+	db 14, 30, PEWTER_CITY_BR, 14,  2
+	db 16, 30, PEWTER_CITY_BR, 16,  2
+	db 18, 30, PEWTER_CITY_BR, 18,  2
+	db 20, 30, PEWTER_CITY_BR, 20,  2
+	db 22, 30, PEWTER_CITY_BR, 22,  2
+	db 24, 30, PEWTER_CITY_BR, 24,  2
+	db 26, 30, PEWTER_CITY_BR, 26,  2
+	db 28, 30, PEWTER_CITY_BR, 28,  2
+	db 30, 30, PEWTER_CITY_BR, 30,  2
+	db $00, $00
+
+PewterCityBLWarpData:
+	db 26, 30, OVERWORLD_MAP,  0,  0
+	db 28, 30, OVERWORLD_MAP,  0,  0
+	db 30,  2, PEWTER_CITY_BR,  2,  2
+	db 30,  4, PEWTER_CITY_BR,  2,  4
+	db 30,  6, PEWTER_CITY_BR,  2,  6
+	db 30,  8, PEWTER_CITY_BR,  2,  8
+	db 30, 10, PEWTER_CITY_BR,  2, 10
+	db 30, 12, PEWTER_CITY_BR,  2, 12
+	db 30, 14, PEWTER_CITY_BR,  2, 14
+	db 30, 16, PEWTER_CITY_BR,  2, 16
+	db 30, 18, PEWTER_CITY_BR,  2, 18
+	db 30, 20, PEWTER_CITY_BR,  2, 20
+	db 30, 22, PEWTER_CITY_BR,  2, 22
+	db 30, 24, PEWTER_CITY_BR,  2, 24
+	db 30, 26, PEWTER_CITY_BR,  2, 26
+	db 30, 28, PEWTER_CITY_BR,  2, 28
+	db 30, 30, PEWTER_CITY_BR,  2, 30
+	db  2,  0, PEWTER_CITY_TL,  2, 28
+	db  4,  0, PEWTER_CITY_TL,  4, 28
+	db  6,  0, PEWTER_CITY_TL,  6, 28
+	db  8,  0, PEWTER_CITY_TL,  8, 28
+	db 10,  0, PEWTER_CITY_TL, 10, 28
+	db 12,  0, PEWTER_CITY_TL, 12, 28
+	db 14,  0, PEWTER_CITY_TL, 14, 28
+	db 16,  0, PEWTER_CITY_TL, 16, 28
+	db 18,  0, PEWTER_CITY_TL, 18, 28
+	db 20,  0, PEWTER_CITY_TL, 20, 28
+	db 22,  0, PEWTER_CITY_TL, 22, 28
+	db 24,  0, PEWTER_CITY_TL, 24, 28
+	db 26,  0, PEWTER_CITY_TL, 26, 28
+	db 28,  0, PEWTER_CITY_TL, 28, 28
+	db 30,  0, PEWTER_CITY_TL, 30, 28
+	db $00, $00
+
+PewterCityBRWarpData:
+	db 30,  2, OVERWORLD_MAP,  0,  0
+	db 30,  4, OVERWORLD_MAP,  0,  0
+	db 30,  6, OVERWORLD_MAP,  0,  0
+	db 30,  8, OVERWORLD_MAP,  0,  0
+	db  0,  2, PEWTER_CITY_BL, 28,  2
+	db  0,  4, PEWTER_CITY_BL, 28,  4
+	db  0,  6, PEWTER_CITY_BL, 28,  6
+	db  0,  8, PEWTER_CITY_BL, 28,  8
+	db  0, 10, PEWTER_CITY_BL, 28, 10
+	db  0, 12, PEWTER_CITY_BL, 28, 12
+	db  0, 14, PEWTER_CITY_BL, 28, 14
+	db  0, 16, PEWTER_CITY_BL, 28, 16
+	db  0, 18, PEWTER_CITY_BL, 28, 18
+	db  0, 20, PEWTER_CITY_BL, 28, 20
+	db  0, 22, PEWTER_CITY_BL, 28, 22
+	db  0, 24, PEWTER_CITY_BL, 28, 24
+	db  0, 26, PEWTER_CITY_BL, 28, 26
+	db  0, 28, PEWTER_CITY_BL, 28, 28
+	db  0, 30, PEWTER_CITY_BL, 28, 30
+	db  2,  0, PEWTER_CITY_TR,  2, 28
+	db  4,  0, PEWTER_CITY_TR,  4, 28
+	db  6,  0, PEWTER_CITY_TR,  6, 28
+	db  8,  0, PEWTER_CITY_TR,  8, 28
+	db 10,  0, PEWTER_CITY_TR, 10, 28
+	db 12,  0, PEWTER_CITY_TR, 12, 28
+	db 14,  0, PEWTER_CITY_TR, 14, 28
+	db 16,  0, PEWTER_CITY_TR, 16, 28
+	db 18,  0, PEWTER_CITY_TR, 18, 28
+	db 20,  0, PEWTER_CITY_TR, 20, 28
+	db 22,  0, PEWTER_CITY_TR, 22, 28
+	db 24,  0, PEWTER_CITY_TR, 24, 28
+	db 26,  0, PEWTER_CITY_TR, 26, 28
+	db 28,  0, PEWTER_CITY_TR, 28, 28
+	db 30,  0, PEWTER_CITY_TR, 30, 28
 	db $00, $00

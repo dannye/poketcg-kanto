@@ -38,6 +38,10 @@
 	const VIRIDIAN_CITY_TR
 	const VIRIDIAN_CITY_BL
 	const VIRIDIAN_CITY_BR
+	const PEWTER_CITY_TL
+	const PEWTER_CITY_TR
+	const PEWTER_CITY_BL
+	const PEWTER_CITY_BR
 
 DEF NUM_MAPS EQU const_value
 
@@ -87,6 +91,7 @@ DEF NUM_MAP_SCRIPTS EQU 8
 	const MAP_SGB_PALS_8  ; $8
 	const MAP_SGB_PALS_9  ; $9
 	const MAP_SGB_PALS_10 ; $a
+	const MAP_SGB_PALS_11
 
 	const_def 0
 	const MAP_EVENT_POKEMON_DOME_DOOR      ; $0

@@ -522,6 +522,7 @@ SetSGB2AndSGB3MapPalette:
 	dw SGBData_MapPals8  ; MAP_SGB_PALS_8
 	dw SGBData_MapPals9  ; MAP_SGB_PALS_9
 	dw SGBData_MapPals10 ; MAP_SGB_PALS_10
+	dw SGBData_MapPals11 ; MAP_SGB_PALS_11
 
 Func_703cb:
 	ld a, [wConsole]
@@ -813,6 +814,10 @@ SGBData_MapPals9:
 SGBData_MapPals10:
 	dw $20 ; length
 	INCBIN "data/sgb_data/map_pals_10.bin.lz"
+
+SGBData_MapPals11:
+	dw $20 ; length
+	INCBIN "data/sgb_data/map_pals_11.bin.lz"
 
 SGBData_CharizardIntro:
 	dw $20 ; length

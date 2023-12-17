@@ -2440,3 +2440,67 @@ ViridianCityBRCGBTilemap::
 	INCBIN "data/maps/tiles/cgb/viridian_city_br.bgmap.lz"
 ViridianCityBRCGBPermissions:
 	INCBIN "data/maps/permissions/viridian_city_br.bin.lz"
+
+PewterCityTLTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_tl.dimensions"
+	dw PewterCityTLPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/pewter_city_tl.bin.lz"
+PewterCityTLPermissions:
+	INCBIN "data/maps/permissions/pewter_city_tl.bin.lz"
+
+PewterCityTLCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_tl.dimensions"
+	dw PewterCityTLCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/pewter_city_tl.bgmap.lz"
+PewterCityTLCGBPermissions:
+	INCBIN "data/maps/permissions/pewter_city_tl.bin.lz"
+
+PewterCityTRTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_tr.dimensions"
+	dw PewterCityTRPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/pewter_city_tr.bin.lz"
+PewterCityTRPermissions:
+	INCBIN "data/maps/permissions/pewter_city_tr.bin.lz"
+
+PewterCityTRCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_tr.dimensions"
+	dw PewterCityTRCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/pewter_city_tr.bgmap.lz"
+PewterCityTRCGBPermissions:
+	INCBIN "data/maps/permissions/pewter_city_tr.bin.lz"
+
+PewterCityBLTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_bl.dimensions"
+	dw PewterCityBLPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/pewter_city_bl.bin.lz"
+PewterCityBLPermissions:
+	INCBIN "data/maps/permissions/pewter_city_bl.bin.lz"
+
+PewterCityBLCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_bl.dimensions"
+	dw PewterCityBLCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/pewter_city_bl.bgmap.lz"
+PewterCityBLCGBPermissions:
+	INCBIN "data/maps/permissions/pewter_city_bl.bin.lz"
+
+PewterCityBRTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_br.dimensions"
+	dw PewterCityBRPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/pewter_city_br.bin.lz"
+PewterCityBRPermissions:
+	INCBIN "data/maps/permissions/pewter_city_br.bin.lz"
+
+PewterCityBRCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/pewter_city_br.dimensions"
+	dw PewterCityBRCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/pewter_city_br.bgmap.lz"
+PewterCityBRCGBPermissions:
+	INCBIN "data/maps/permissions/pewter_city_br.bin.lz"
