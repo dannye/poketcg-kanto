@@ -2504,3 +2504,67 @@ PewterCityBRCGBTilemap::
 	INCBIN "data/maps/tiles/cgb/pewter_city_br.bgmap.lz"
 PewterCityBRCGBPermissions:
 	INCBIN "data/maps/permissions/pewter_city_br.bin.lz"
+
+CeruleanCityTLTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_tl.dimensions"
+	dw CeruleanCityTLPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/cerulean_city_tl.bin.lz"
+CeruleanCityTLPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_tl.bin.lz"
+
+CeruleanCityTLCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_tl.dimensions"
+	dw CeruleanCityTLCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/cerulean_city_tl.bgmap.lz"
+CeruleanCityTLCGBPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_tl.bin.lz"
+
+CeruleanCityTRTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_tr.dimensions"
+	dw CeruleanCityTRPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/cerulean_city_tr.bin.lz"
+CeruleanCityTRPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_tr.bin.lz"
+
+CeruleanCityTRCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_tr.dimensions"
+	dw CeruleanCityTRCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/cerulean_city_tr.bgmap.lz"
+CeruleanCityTRCGBPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_tr.bin.lz"
+
+CeruleanCityBLTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_bl.dimensions"
+	dw CeruleanCityBLPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/cerulean_city_bl.bin.lz"
+CeruleanCityBLPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_bl.bin.lz"
+
+CeruleanCityBLCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_bl.dimensions"
+	dw CeruleanCityBLCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/cerulean_city_bl.bgmap.lz"
+CeruleanCityBLCGBPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_bl.bin.lz"
+
+CeruleanCityBRTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_br.dimensions"
+	dw CeruleanCityBRPermissions
+	db FALSE ; cgb mode
+	INCBIN "data/maps/tiles/gb/cerulean_city_br.bin.lz"
+CeruleanCityBRPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_br.bin.lz"
+
+CeruleanCityBRCGBTilemap::
+	INCBIN "data/maps/tiles/dimensions/cerulean_city_br.dimensions"
+	dw CeruleanCityBRCGBPermissions
+	db TRUE ; cgb mode
+	INCBIN "data/maps/tiles/cgb/cerulean_city_br.bgmap.lz"
+CeruleanCityBRCGBPermissions:
+	INCBIN "data/maps/permissions/cerulean_city_br.bin.lz"

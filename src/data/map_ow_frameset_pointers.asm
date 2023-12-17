@@ -44,4 +44,8 @@ MapOWFramesetPointers:
 	dw KantoOWFrameset,           KantoOWFrameset              ; PEWTER_CITY_TR
 	dw KantoOWFrameset,           KantoOWFrameset              ; PEWTER_CITY_BL
 	dw KantoOWFrameset,           KantoOWFrameset              ; PEWTER_CITY_BR
+	dw KantoOWFrameset,           KantoOWFrameset              ; CERULEAN_CITY_TL
+	dw KantoOWFrameset,           KantoOWFrameset              ; CERULEAN_CITY_TR
+	dw KantoOWFrameset,           KantoOWFrameset              ; CERULEAN_CITY_BL
+	dw KantoOWFrameset,           KantoOWFrameset              ; CERULEAN_CITY_BR
 	assert_table_length NUM_MAPS

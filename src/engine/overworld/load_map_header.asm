@@ -4,13 +4,16 @@ LoadMapHeader:
 	push bc
 	push de
 	ld a, [wCurMap]
-	add a
-	ld c, a
-	add a
-	add c
 	ld c, a
 	ld b, 0
-	ld hl, MapHeaders
+	ld hl, 0
+	add hl, bc
+	add hl, bc
+	add hl, bc
+	add hl, bc
+	add hl, bc
+	add hl, bc
+	ld bc, MapHeaders
 	add hl, bc
 	ld a, [hli]
 	ld [wCurTilemap], a

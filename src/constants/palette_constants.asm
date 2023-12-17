@@ -163,5 +163,6 @@
 	const PALETTE_161
 	const PALETTE_162
 	const PALETTE_163
+	const PALETTE_164
 
 DEF NUM_PALETTES EQU const_value
